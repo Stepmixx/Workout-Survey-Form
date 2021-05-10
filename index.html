@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Survey</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="ellipse-comtainer"></div>
+      <h1 id="title">Workout</h1>
+      <h2>Survey Form</h2>
+      <p id="description">Exercising is important, but for you?</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Workout days per week</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter the number of days you train per week"
+            min="0"
+            max="7"
+          />
+        </div>
+        <div class="form-group">
+          <label for="fav-act">What's your favorite type of activity?</label>
+          <select name="fav-act" id="dropdown">
+            <option disabled selected value>
+              Select your favorite activity
+            </option>
+            <option value="cardiovascular">Cardiovascular</option>
+            <option value="strength and muscle resistance">
+              Strength and muscle resistance
+            </option>
+            <option value="flexibility">Flexibility</option>
+            <option value="coordination">Coordination</option>
+          </select>
+        </div>
+        <div class="form group">
+          <p>Has exercising improved your life?</p>
+          <label>
+            <input
+              name="improve"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="improve"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+          <label
+            ><input
+              name="improve"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Why do you exercise?</p>
+          <label
+            ><input
+              name="why-exercise"
+              value="physique"
+              type="checkbox"
+              class="input-checkbox"
+            />Physique</label
+          >
+          <label>
+            <input
+              name="why-exercise"
+              value="health"
+              type="checkbox"
+              class="input-checkbox"
+            />Health</label
+          >
+          <label
+            ><input
+              name="why-exercise"
+              value="fun"
+              type="checkbox"
+              class="input-checkbox"
+            />Fun</label
+          >
+          <label
+            ><input
+              name="why-exercise"
+              value="discipline"
+              type="checkbox"
+              class="input-checkbox"
+            />Discipline</label
+          >
+        </div>
+        <div class="form-group">
+          <label for="motivation-textarea"
+            >Any message to motivate others to workout?</label
+          >
+          <textarea
+            name="motivation-textarea"
+            id="motivation-textarea"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright © 2021. Stephan Calderin. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
