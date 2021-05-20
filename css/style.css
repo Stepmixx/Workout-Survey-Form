@@ -90,11 +90,11 @@ video {
 
 html {
   font-family: "Roboto", sans-serif;
-  background-image: url("https://stepmixx.github.io/Workout-Survey-Form/img/gym-bg.png");
+  background-image: url("https://stepmixx.github.io/Workout-Survey-Form/img/bg.png");
   font-size: 1rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 
 h1 {
@@ -238,4 +238,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 600px) {
 }
