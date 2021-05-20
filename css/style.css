@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap");
+
 html,
 body,
 div,
@@ -82,10 +84,158 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1rem;
   vertical-align: baseline;
 }
 
 html {
-  background-image: url("..img/gym-bg-blur.png");
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://stepmixx.github.io/Workout-Survey-Form/img/gym-bg.png");
+  font-size: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 43px;
+}
+
+header {
+  color: #f2f2f2;
+}
+
+#form-container {
+  width: 500px;
+  height: 1000px;
+  background: #f2f2f2;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#survey-form {
+  width: 400px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #505050;
+  margin-left: 5px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin-top: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input::placeholder,
+button::placeholder,
+textarea ::placeholder {
+  color: #cfcfcf;
+  padding-left: 10px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+#email,
+#name,
+#number,
+#dropdown {
+  width: 100%;
+  height: 40px;
+}
+
+#email,
+#name,
+#number,
+#motivation-textarea,
+#dropdown {
+  background: #dfdfdf;
+  border: 2px solid #cfcfcf;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.checkboxes label,
+.radios label {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+  position: relative;
+}
+
+.input-checkbox,
+.input-radio {
+  vertical-align: bottom;
+  appearance: none;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+  background: #dfdfdf;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+
+.input-radio {
+  border-radius: 20px;
+}
+.input-checkbox:active,
+.input-radio:active,
+.input-radio:checked:active .input-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-checkbox:checked,
+.input-radio:checked {
+  border: 7px solid #c0c0c0;
+}
+
+#motivation-textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  background: #505050;
+  border-radius: 10px;
+  color: #f2f2f2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #505050;
+  color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

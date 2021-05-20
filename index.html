@@ -9,129 +9,141 @@
   </head>
   <body>
     <header>
-      <div id="ellipse-comtainer"></div>
+      <div id="ellipse-container"></div>
       <h1 id="title">Workout</h1>
       <h2>Survey Form</h2>
       <p id="description">Exercising is important, but for you?</p>
     </header>
     <main>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
-        </div>
-        <div class="form-group">
-          <label for="email" id="email-label">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number">Workout days per week</label>
-          <input
-            type="number"
-            id="number"
-            placeholder="Enter the number of days you train per week"
-            min="0"
-            max="7"
-          />
-        </div>
-        <div class="form-group">
-          <label for="fav-act">What's your favorite type of activity?</label>
-          <select name="fav-act" id="dropdown">
-            <option disabled selected value>
-              Select your favorite activity
-            </option>
-            <option value="cardiovascular">Cardiovascular</option>
-            <option value="strength and muscle resistance">
-              Strength and muscle resistance
-            </option>
-            <option value="flexibility">Flexibility</option>
-            <option value="coordination">Coordination</option>
-          </select>
-        </div>
-        <div class="form group">
-          <p>Has exercising improved your life?</p>
-          <label>
+      <div id="form-container">
+        <form id="survey-form">
+          <div class="form-group">
+            <label class="subtitle" id="name-label" for="name">Name</label>
             <input
-              name="improve"
-              value="Yes"
-              type="radio"
-              class="input-radio"
-              checked
-            />Yes</label
-          >
-          <label>
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="subtitle" for="email" id="email-label">Email</label>
             <input
-              name="improve"
-              value="No"
-              type="radio"
-              class="input-radio"
-            />No</label
-          >
-          <label
-            ><input
-              name="improve"
-              value="maybe"
-              type="radio"
-              class="input-radio"
-            />Maybe</label
-          >
-        </div>
-        <div class="form-group">
-          <p>Why do you exercise?</p>
-          <label
-            ><input
-              name="why-exercise"
-              value="physique"
-              type="checkbox"
-              class="input-checkbox"
-            />Physique</label
-          >
-          <label>
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="subtitle" id="number-label" for="number"
+              >Workout days per week</label
+            >
             <input
-              name="why-exercise"
-              value="health"
-              type="checkbox"
-              class="input-checkbox"
-            />Health</label
-          >
-          <label
-            ><input
-              name="why-exercise"
-              value="fun"
-              type="checkbox"
-              class="input-checkbox"
-            />Fun</label
-          >
-          <label
-            ><input
-              name="why-exercise"
-              value="discipline"
-              type="checkbox"
-              class="input-checkbox"
-            />Discipline</label
-          >
-        </div>
-        <div class="form-group">
-          <label for="motivation-textarea"
-            >Any message to motivate others to workout?</label
-          >
-          <textarea
-            name="motivation-textarea"
-            id="motivation-textarea"
-            placeholder="Enter your message..."
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
+              type="number"
+              id="number"
+              placeholder="Enter the number of days you train per week"
+              min="0"
+              max="7"
+            />
+          </div>
+          <div class="form-group">
+            <label class="subtitle" for="fav-act"
+              >What's your favorite type of activity?</label
+            >
+            <select name="fav-act" id="dropdown">
+              <option disabled selected value>
+                Select your favorite activity
+              </option>
+              <option value="cardiovascular">Cardiovascular</option>
+              <option value="strength and muscle resistance">
+                Strength and muscle resistance
+              </option>
+              <option value="flexibility">Flexibility</option>
+              <option value="coordination">Coordination</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="subtitle" id="radio-subtitle" for="improve"
+              >Has exercising improved your life?</label
+            >
+            <div id="radios">
+              <label>
+                Yes<input
+                  name="improve"
+                  value="Yes"
+                  type="radio"
+                  class="input-radio"
+                  checked
+              /></label>
+              <label>
+                No<input
+                  name="improve"
+                  value="No"
+                  type="radio"
+                  class="input-radio"
+              /></label>
+              <label
+                >Maybe<input
+                  name="improve"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+              /></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="subtitle" id="checkbox-subtitle" for="why-exercise"
+              >Why do you exercise?</label
+            >
+            <div id="checkboxes">
+              <label
+                >Physique<input
+                  name="why-exercise"
+                  value="physique"
+                  type="checkbox"
+                  class="input-checkbox"
+              /></label>
+              <label>
+                Health<input
+                  name="why-exercise"
+                  value="health"
+                  type="checkbox"
+                  class="input-checkbox"
+              /></label>
+              <label
+                >Fun<input
+                  name="why-exercise"
+                  value="fun"
+                  type="checkbox"
+                  class="input-checkbox"
+              /></label>
+              <label
+                >Discipline<input
+                  name="why-exercise"
+                  value="discipline"
+                  type="checkbox"
+                  class="input-checkbox"
+              /></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="subtitle" for="motivation-textarea"
+              >Any message to motivate others to workout?</label
+            >
+            <textarea
+              name="motivation-textarea"
+              id="motivation-textarea"
+              placeholder="Enter your message..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <p>Copyright © 2021. Stephan Calderin. All rights reserved.</p>
